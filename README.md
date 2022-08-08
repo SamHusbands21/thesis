@@ -6,7 +6,7 @@ In terms of file structure, all the notebooks sits in the same level, with the p
 Should you wish to run the data reading yourself, the data is all available from the 2007-2008 NHANES wave linked: https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2007. The raw data files should be saved in the path ./data/raw_data_files
 
 In terms of ordering the code, data_reading.py and data_reading_large.py read in the data, with data_reading_large.py reading in the data with all features. This code is optional, the two csvs (mortality.csv and mortality_large.csv) are the sole output and should be saved  be saved in the path a path ./data.
-A complete list of the data files used is in the readme for the data reading scripts, as uploading all of these exceeds the data limit.
+A complete list of the data files used is is provided in dataset_listing.md, as uploading all of these exceeds the data limit.
 
 Following on from datareading, the bootstrapping python file creates the bootstrapped datasets and should be run second.
 

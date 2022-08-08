@@ -1,3 +1,6 @@
+#This code iterates through 999 bootstraps, outputting predictions on the test set for 999 different bootstrapped datasets.
+#These predictions are saved in./predictions/initial_results
+
 import glob
 import numpy as np
 import os

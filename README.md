@@ -8,7 +8,7 @@ Should you wish to run the data reading yourself, the data is all available from
 In terms of ordering the code, data_reading.py and data_reading_large.py read in the data, with data_reading_large.py reading in the data with all features. This code is optional, the two csvs (mortality.csv and mortality_large.csv) are the sole output and should be saved  be saved in the path a path ./data.
 A complete list of the data files used is is provided in dataset_listing.md, as uploading all of these exceeds the data limit.
 
-Following on from datareading, the bootstrapping python file creates the bootstrapped datasets and should be run second.
+Following on from datareading, the bootstrapping python file creates the bootstrapped datasets and should be run second. Theses files perform the model building and optimisation on each of the bootstraps, and output predictions for each bootstrap to a csv.
 
 After this, the model_building_X.py files can be run. This implement the different varieties of model building with different variants:
 - model_building.py refers to the initial analysis with the strong number of features, and includes the training of the ensemble learner.

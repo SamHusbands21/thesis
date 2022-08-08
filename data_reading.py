@@ -1,3 +1,6 @@
+#this file takes in data from the files DEMO_E.XPT, BMX_E.XPT SMQ_E.XPT, ALQ_E.XPT, BPX_E.XPT, TCHOL_E.XPT and DIQ_E.XPT
+#and outputs mortality.csv, a single dataset with 9 predictors.
+
 #packages
 import pandas as pd
 import numpy as np

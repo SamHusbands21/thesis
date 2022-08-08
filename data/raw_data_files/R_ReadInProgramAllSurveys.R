@@ -1,3 +1,6 @@
+# This code converts NHANES_2007_2008_MORT_2019_PUBLIC.dat into lmf.csv, and is largely based on code
+# provided by the NHANES linked mortality file
+
 # *****************************************************************************************
 # May 2022
 # 

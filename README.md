@@ -21,7 +21,7 @@ Following on from this, the model_discrimination.py files can be run. This imple
 
 Lastly, the model_calibration.py files can be run. This implement the evaluations of calibration performance for each algorithm, again outputting figures to the filepath ./figures
 
-It should be noted that this code is really here to give a flavour of the code that was run in a more interpretable format. The real code run used more parallelisation to improve run time, at the expense of there being many more files and less interpretablity. If there are an questions, please do email sam.husbands21@gmail.com.
+It should be noted that this code is really here to give a flavour of the code that was run in a more interpretable format. The real code run used more parallelisation to improve run time, at the expense of there being many more files and less interpretablity. Much of the model building utilised hex; https://hex.cs.bath.ac.uk/ in order to further improve run time. If there are an questions, please do email sam.husbands21@gmail.com.
 
 
 

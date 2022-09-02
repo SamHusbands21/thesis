@@ -6,7 +6,7 @@ In terms of file structure, all the .py files should sit in the same level, with
 Should you wish to run the data reading yourself, the data is all available from the 2007-2008 NHANES wave linked: https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2007. The raw data files should be saved in the path ./data/raw_data_files
 
 In terms of ordering the code, data_reading.py and data_reading_large.py read in the data, with data_reading_large.py reading in the data with all features. This code is optional, the two csvs (mortality.csv and mortality_large.csv) are the sole output and should be saved  be saved in the path a path ./data.
-A complete list of the data files used is is provided in dataset_listing.md, as uploading all of these exceeds the github file size limit.
+A complete list of the data files used is is provided in dataset_listing.md, as uploading all of these exceeds the github file size limit. I also linked all the data files here: https://www.dropbox.com/sh/yoc1zkc5eg751oh/AABtMgJDiktEGsKgpFDvmOeza?dl=0
 
 Following on from datareading, the bootstrapping python file creates the bootstrapped datasets and should be run second. Theses files perform the model building and optimisation on each of the bootstraps, and output predictions for each bootstrap to a csv.
 
@@ -17,9 +17,12 @@ After this, the model_building_X.py files can be run. This implement the differe
 - model_building_pca.py refers to model building where the features underwent PCA and the top 30 PCs were used in model training.
 - model_building_hyperparameter.py refers to model building where the number of random hyperparameter searches h of the training data is equal to X (note this was    dropped from the thesis but thought I'd leave it in here).
 
+The model building, as explained in the thesis, is computationally expensive to the point that I'd not recommend running it. I have linked the output of these files in the linked dropbox: 
+https://www.dropbox.com/sh/ud3ecyd9w8nx44v/AAAwaYeazLVtZDe3ykYeb1Nda?dl=0
+
 Following this, the calibration and discrimination files can be run. The calibration.R file implements the LOESS smoother, and is required for the model_calibration_plots.py and model_calibration_ici.py, which perform the plotting of the calibration and ici plots. The model_discrimination_roc.py and model_discrimination_AUC.py implement the ROC and AUC plots. All plots output figures to the filepath ./figures.
 
-It should be noted that this code is really here to give a flavour of the code that was run in a more interpretable format. The real code run used more parallelisation to improve run time, at the expense of there being many more files and less interpretablity. Much of the model building utilised hex; https://hex.cs.bath.ac.uk/ in order to further improve run time. If there are any questions, please do email sam.husbands21@gmail.com.
+Other than the model building, this is the exact code that was used in the thesis. The real code run used more parallelisation to improve run time, at the expense of there being many more files and less interpretablity. Much of the model building utilised hex; https://hex.cs.bath.ac.uk/ in order to further improve run time. If there are any questions, please do email sam.husbands21@gmail.com, I'm happy to send the pararallised files but it felt unnecessary unless you want to run the code for yourself at a faster pace.
 
 
 

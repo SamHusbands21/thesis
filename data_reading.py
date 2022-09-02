@@ -1,6 +1,3 @@
-#this file takes in data from the files DEMO_E.XPT, BMX_E.XPT SMQ_E.XPT, ALQ_E.XPT, BPX_E.XPT, TCHOL_E.XPT and DIQ_E.XPT
-#and outputs mortality.csv, a single dataset with 9 predictors.
-
 #packages
 import pandas as pd
 import numpy as np
@@ -17,8 +14,8 @@ bp = pd.read_sas('./data/raw_data_files/BPX_E.XPT')
 chol = pd.read_sas('./data/raw_data_files/TCHOL_E.XPT')
 diab = pd.read_sas('./data/raw_data_files/DIQ_E.XPT')
 
-# creates sel_demo, which takes the variables we are interested in
-# from the demographic data file and recodes it in a more desireable format
+#creates sel_demo, which takes the variables we are interested in
+#from the demographic data file and recodes it in a more desireable format
 sel_demo = demo.copy()[['SEQN', 'RIDAGEYR', 'RIAGENDR']]
 sel_demo.rename(columns = {'SEQN': 'id',
                            'RIDAGEYR': 'age',

@@ -15,7 +15,7 @@ After this, the model_building_X.py files can be run. This implement the differe
 - model_building_sample.py refers to model building where the sample size n changes.
 - model_building_features.py refers to model building where the number of randomly selected features changes
 - model_building_pca.py refers to model building where the features underwent PCA and the top 30 PCs were used in model training.
-- model_building_hyperparameter.py refers to model building where the number of random hyperparameter searches h of the training data is equal to X.
+- model_building_hyperparameter.py refers to model building where the number of random hyperparameter searches h of the training data is equal to X (note this was    dropped from the thesis but thought I'd leave it in here).
 
 Following this, the calibration and discrimination files can be run. The calibration.R file implements the LOESS smoother, and is required for the model_calibration_plots.py and model_calibration_ici.py, which perform the plotting of the calibration and ici plots. The model_discrimination_roc.py and model_discrimination_AUC.py implement the ROC and AUC plots. All plots output figures to the filepath ./figures.
 

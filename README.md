@@ -17,11 +17,9 @@ After this, the model_building_X.py files can be run. This implement the differe
 - model_building_pca.py refers to model building where the features underwent PCA and the top 30 PCs were used in model training.
 - model_building_hyperparameter.py refers to model building where the number of random hyperparameter searches h of the training data is equal to X.
 
-Following on from this, the model_discrimination.py files can be run. This implement the evaluations of discriminatory performance and output figures to the filepath ./figures
+Following this, the calibration and discrimination files can be run. The calibration.R file implements the LOESS smoother, and is required for the model_calibration_plots.py and model_calibration_ici.py, which perform the plotting of the calibration and ici plots. The model_discrimination_roc.py and model_discrimination_AUC.py implement the ROC and AUC plots. All plots output figures to the filepath ./figures.
 
-Lastly, the model_calibration.py files can be run. This implement the evaluations of calibration performance for each algorithm, again outputting figures to the filepath ./figures
-
-It should be noted that this code is really here to give a flavour of the code that was run in a more interpretable format. The real code run used more parallelisation to improve run time, at the expense of there being many more files and less interpretablity. Much of the model building utilised hex; https://hex.cs.bath.ac.uk/ in order to further improve run time. If there are an questions, please do email sam.husbands21@gmail.com.
+It should be noted that this code is really here to give a flavour of the code that was run in a more interpretable format. The real code run used more parallelisation to improve run time, at the expense of there being many more files and less interpretablity. Much of the model building utilised hex; https://hex.cs.bath.ac.uk/ in order to further improve run time. If there are any questions, please do email sam.husbands21@gmail.com.
 
 
 
